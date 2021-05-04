@@ -2,7 +2,7 @@ import Modal from './modal'
 import Browser from './browser'
 
 export function addWrapper (htmlData, params) {
-  const bodyStyle = 'font-family:' + params.font + ' !important; font-size: ' + params.font_size + ' !important; width:100%;'
+  const bodyStyle = ' width:100%;'
   return '<div style="' + bodyStyle + '">' + htmlData + '</div>'
 }
 
@@ -27,7 +27,7 @@ export function collectStyles (element, params) {
   }
 
   // Print friendly defaults (deprecated)
-  elementStyle += 'max-width: ' + params.maxWidth + 'px !important; font-size: ' + params.font_size + ' !important;'
+  elementStyle += 'max-width: ' + params.maxWidth + 'px !important;'
 
   return elementStyle
 }
